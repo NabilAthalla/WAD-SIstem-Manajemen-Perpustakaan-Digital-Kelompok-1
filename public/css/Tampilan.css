@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+:root {
+    --navy: #0f1b2d;
+    --navy-soft: #1b2b45;
+    --gold: #c9a24b;
+    --gold-soft: #e6d3a3;
+    --ivory: #faf8f4;
+    --ink: #1f2937;
+    --muted: #6b7280;
+    --line: #ece7dc;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ivory);
+    color: var(--ink);
+    letter-spacing: 0.01em;
+}
+
+h1, h2, h3, .page-title {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--navy) !important;
+    border-bottom: 2px solid var(--gold);
+    box-shadow: 0 4px 20px rgba(15, 27, 45, 0.25);
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #fff !important;
+}
+.navbar-brand span { color: var(--gold) !important; }
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.75) !important;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--gold) !important;
+    background: rgba(201, 162, 75, 0.12) !important;
+}
+
+/* Tombol */
+.btn-primary {
+    background: linear-gradient(135deg, var(--gold), #a9822f) !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.6rem 1.3rem;
+    box-shadow: 0 6px 16px rgba(169, 130, 47, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(169, 130, 47, 0.4);
+}
+
+/* Kartu */
+.card {
+    border: 1px solid var(--line) !important;
+    border-radius: 16px !important;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(15, 27, 45, 0.06) !important;
+}
+
+/* Tabel */
+.table thead th {
+    background: var(--navy);
+    color: var(--gold-soft);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border: none;
+    padding: 0.9rem 1rem;
+}
+.table tbody tr { transition: background 0.2s ease; }
+.table tbody tr:hover { background: #fbf6e9; }
+.table td { padding: 0.9rem 1rem; border-color: var(--line); vertical-align: middle; }
+
+/* Form dan pencarian */
+.form-control, .form-select {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: #fff;
+}
+.form-control:focus, .form-select:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 0.2rem rgba(201, 162, 75, 0.2);
+}
+
+/* Footer */
+footer {
+    background: var(--navy) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+    border-top: 2px solid var(--gold) !important;
+}
+footer strong, footer b { color: var(--gold); }
